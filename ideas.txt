@@ -1,0 +1,3 @@
+- Usar el htmx para seleccionar la fila con la informacion del dueno, en otra seccion del template cargar las mascotas
+que tiene con mas informacion relevante.
+- Login para cuentas
