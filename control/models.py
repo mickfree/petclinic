@@ -6,6 +6,7 @@ class Client(models.Model):
     last_name = models.CharField(max_length=50)
     address = models.CharField(max_length=100)
     phone = models.IntegerField()
+    city = models.CharField(max_length=100, null=True)
     
     def __str__(self):
         return self.name + " "+ self.last_name
@@ -22,6 +23,8 @@ class Pet(models.Model):
     age = models.CharField(max_length=50)
     size = models.CharField(max_length=1, choices=SIZES)
     client = models.ForeignKey(Client, on_delete=models.CASCADE,blank=True,null=True)
+    birth_date = models.DateField(blank=True, null=True)
+    last_visit = models.DateField(auto_now_add=True)
     
     def __str__(self):
         return "Nombre de la mascota: " + self.name + " Raza: "+ self.race + " Dueño: " + self.client.name
