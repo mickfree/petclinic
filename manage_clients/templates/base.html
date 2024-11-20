@@ -49,13 +49,22 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">vet appointment</a>
+                    <a class="nav-link" href="#">Owners</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">pets</a>
+                    <a class="nav-link" href="#">Vet appointment</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">logout</a>
+                    <a class="nav-link" href="#">Visit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pets</a>
+                  </li>
+                  <li class="nav-item">
+                    <form action="{% url 'logout' %}" method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-link nav-link" style="padding: 0; border: none; background: none; color: white;">Logout</button>
+                    </form>
                   </li>
                 </ul>
               </div>
