@@ -5,3 +5,5 @@ que tiene con mas informacion relevante.
 
 - Crear template visitas.
 - Crear template owners con su ID independiente de cada duenio, esta seccion contara datos de las mascotas, datos de las fechas realizadas, Botones para anadir mascotas y modificar datos del owner.
+
+- hacer un funcion con google calendar para enviar correos con los horarios o fechas donde se atendieron a sus mascotas.
